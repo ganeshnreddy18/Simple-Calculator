@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calci.css">
+</head>
+<body>
+    <div class="border">
+        
+    <h1>Calculator</h1>
+    <div class="text">
+        <input class="text-bar"  type="text" readonly>
+    </div>
+    <div class="grid-container">
+        <button class="allClear" onclick="allClear();">AC</button>
+        <button class="clear" onclick="dle();">X</button>
+        <button>+/-</button>
+        <button onclick="addToTextBar('/');">/</button>
+        <button class="num" onclick="addToTextBar('1');">1</button>
+        <button class="num" onclick="addToTextBar('2');">2</button>
+        <button class="num" onclick="addToTextBar('3');">3</button>
+        <button class="add" onclick="addToTextBar('+');">+</button>
+
+        <button class="num" onclick="addToTextBar('4');">4</button>
+        <button class="num" onclick="addToTextBar('5');">5</button>
+        <button class="num" onclick="addToTextBar('6');">6</button>
+        <button class="sub" onclick="addToTextBar('-');">-</button>
+
+        <button class="num" onclick="addToTextBar('7');">7</button>
+        <button class="num" onclick="addToTextBar('8');">8</button>
+        <button class="num" onclick="addToTextBar('9');">9</button>
+        <button class="mul" onclick="addToTextBar('*');">*</button>
+
+        <button class="mod" onclick="addToTextBar('%');">%</button>
+        <button class="num" onclick="addToTextBar('0');">0</button>
+        <button onclick="addToTextBar('.');">.</button>
+        <button onclick="calculate();">=</button>
+    </div>
+</div>
+<script src="calci.js"></script>
+</body>
+</html>
